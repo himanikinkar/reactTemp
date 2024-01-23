@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    margin: 10px;
+    padding-left: 30px;
+}
+.logo {
+    width: 90px;
+    margin-top: 4px;
+}
+
+.nav-items > ul {
+    list-style-type: none;
+    display: flex;
+    padding-right: 30px;
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+}
+
+.card {
+    width: 205px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card > img {
+    width: 100%;
+}
+
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
