@@ -1,6 +1,7 @@
 import React from "react";
 import Body from "../src/Components/Body";
 import Header from "../src/Components/Header"
+import About from "./Components/About";
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 
 const App = () => {
@@ -9,21 +10,23 @@ const App = () => {
         <div>
            <Header />
            <Body />
+           <About/>
         </div> 
     );
 };
 
-const appRouter = createBrowserRouter([
+export const appRouter = createBrowserRouter([
     {
-        path:"/",
-        element: <App />
+        path: "/",
+        element: <App />,
+        children : [
+            {
+                path: "/about",
+                element: <About/>,
+            },
+        ],
     },
-    // {
-    //     path: "/about",
-    //     element: <About />
-    // },
+   
 ]);
-
-
 
 export default App;
